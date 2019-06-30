@@ -1,0 +1,39 @@
+body{
+    background-color: #031423;
+}
+.dotSlideWrapper{
+    width: 100%;
+}
+.dot_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 43px;
+height: 5px;
+background: rgba(255, 255, 255, 0.1);
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.dotSlideWrapper > ul > li:nth-child(1){
+    display: block;
+}
+.dotSlideWrapper > ul > li{
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+.active_dot{
+    background: linear-gradient(90deg, #22B2FA 0%, #0042FF 57.57%, #5200FF 100%) !important;
+}
+
+.dotSlideWrapper > ul > li > span{
+    font-family: Prompt;
+font-style: italic;
+font-weight: 600;
+font-size: 32px;
+color: #FFFFFF;
+
+}
